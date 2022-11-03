@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { MainPage } from './components/MainPage';
-import { WeatherDetails } from './components/WeatherDetails';
+import { MainPage } from './components/MainPage/MainPage';
+import { WeatherDetails } from './components/WeatherDetails/WeatherDetails';
 
 export const App: FC = () => {
   return (
