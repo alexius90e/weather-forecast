@@ -20,12 +20,12 @@ export const MainPage: FC = () => {
 
   return (
     <>
-      <h1>{currentWeather && currentWeather.name}</h1>
       <nav>
         <NavLink to={'/weather/mogilev'}>Mogilev</NavLink>
         <NavLink to={'/weather/minsk'}>Minsk</NavLink>
         <NavLink to={'/weather/moscow'}>Moscow</NavLink>
         <NavLink to={'/weather/bratislava'}>Bratislava</NavLink>
+        <NavLink to={'/weather/yakutsk'}>Yakutsk</NavLink>
       </nav>
 
       {currentWeather && <CurrentForecast {...{ currentWeather }} />}
