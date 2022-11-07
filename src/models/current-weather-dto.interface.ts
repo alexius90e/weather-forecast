@@ -1,3 +1,5 @@
+import { WeatherIconType } from './weather-icon-type.type';
+
 export interface CurrentWeather {
   coord: {
     lon: number;
@@ -8,7 +10,7 @@ export interface CurrentWeather {
       id: number;
       main: string;
       description: string;
-      icon: string;
+      icon: WeatherIconType;
     }
   ];
   base: string;
