@@ -20,12 +20,14 @@ export const MainPage: FC = () => {
 
   return (
     <>
-      <nav>
+      <nav style={{ display: 'flex', gap: '0.5rem', padding: '1rem 0' }}>
         <NavLink to={'/weather/mogilev'}>Mogilev</NavLink>
         <NavLink to={'/weather/minsk'}>Minsk</NavLink>
         <NavLink to={'/weather/moscow'}>Moscow</NavLink>
         <NavLink to={'/weather/bratislava'}>Bratislava</NavLink>
-        <NavLink to={'/weather/yakutsk'}>Yakutsk</NavLink>
+        <NavLink to={'/weather/johannesburg'}>Johannesburg</NavLink>
+        <NavLink to={'/weather/seoul'}>Seoul</NavLink>
+        <NavLink to={'/weather/bogra'}>Bogra </NavLink>
       </nav>
 
       {currentWeather && <CurrentForecast {...{ currentWeather }} />}

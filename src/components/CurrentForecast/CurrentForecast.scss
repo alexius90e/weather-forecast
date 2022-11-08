@@ -1,0 +1,76 @@
+.current-forecast {
+  &__city {
+    margin: 0.5rem 0 1rem;
+    font-size: 2.5rem;
+  }
+
+  &__date {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+}
+
+.forecast {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  &__temp {
+    flex: 0 1 auto;
+    text-align: center;
+
+    &-current {
+      margin: 0;
+      font-size: 6.75rem;
+      font-weight: 400;
+    }
+
+    &-min-max {
+      width: max-content;
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+
+  &__icon {
+    flex: 0 1 auto;
+    max-width: 17.5rem;
+  }
+
+  &__details {
+    flex: 1 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+    &-heading {
+      margin: 0 0 0.125rem;
+      font-weight: 400;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__wind {
+    flex: 1 0 50%;
+  }
+
+  &__wind > &__details-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__info > &__details-heading {
+    margin-right: 1rem;
+    font-weight: 700;
+  }
+}
