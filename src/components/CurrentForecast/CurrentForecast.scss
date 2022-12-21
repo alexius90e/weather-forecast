@@ -46,7 +46,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 300;
 
     &-heading {
       margin: 0 0 0.125rem;
@@ -71,6 +71,10 @@
 
   &__info > &__details-heading {
     margin-right: 1rem;
-    font-weight: 700;
+    font-weight: 600;
+  }
+
+  &__info > &__description {
+    font-weight: 600;
   }
 }
